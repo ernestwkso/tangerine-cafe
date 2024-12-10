@@ -1,4 +1,5 @@
 {
+  "base_url": "https://github.com/ernestwkso/tangerine-cafe/blob/main/menu/",
   "奄列": {
     "markdown": "### 🌟 奄列選項：\n\nA. 奄列（£4）\nB. 芝士奄列（£5）\nC. 蘑菇奄列（£5）\nD. 火腿奄列（£6）\nE. 煙肉奄列（£6）\n0. 重新選擇（清空選擇）\n\n請輸入對應的字母進行選擇。",
     "items": {
@@ -8,7 +9,7 @@
         "next": "addons",
         "load": {
           "type": "addons",
-          "source": "menu-omelettes-addons.json"
+          "source": "{base_url}menu-omelettes-addons.json"
         }
       },
       "B": {
@@ -17,7 +18,7 @@
         "next": "addons",
         "load": {
           "type": "addons",
-          "source": "menu-omelettes-addons.json"
+          "source": "{base_url}menu-omelettes-addons.json"
         }
       },
       "C": {
@@ -26,7 +27,7 @@
         "next": "addons",
         "load": {
           "type": "addons",
-          "source": "menu-omelettes-addons.json"
+          "source": "{base_url}menu-omelettes-addons.json"
         }
       },
       "D": {
@@ -35,7 +36,7 @@
         "next": "addons",
         "load": {
           "type": "addons",
-          "source": "menu-omelettes-addons.json"
+          "source": "{base_url}menu-omelettes-addons.json"
         }
       },
       "E": {
@@ -44,7 +45,7 @@
         "next": "addons",
         "load": {
           "type": "addons",
-          "source": "menu-omelettes-addons.json"
+          "source": "{base_url}menu-omelettes-addons.json"
         }
       },
       "0": {
@@ -52,7 +53,7 @@
       }
     },
     "instructions": {
-      "load_addons": "After the user selects an omelette option (e.g., A for 奄列), load the 'addons' section by fetching the JSON file specified in the 'load' field ('menu-omelettes-addons.json').",
+      "load_addons": "After the user selects an omelette option (e.g., A for 奄列), dynamically replace '{base_url}' with the value of the 'base_url' key to load the addons JSON file.",
       "reset_option": "If the user selects '0', reset the selection and allow them to choose an omelette again."
     }
   }
