@@ -1,7 +1,6 @@
 {
   "menu_loader": {
     "base_url": "https://github.com/ernestwkso/tangerine-cafe/blob/main/menu/",
-    "markdown": "### 🌟 請選擇餐點分類：\n\nA. 奄列\nB. 散叫湯面\nC. 港式頹飯\nD. 港式三文治、多士、法包\nE. 飲品\n\n請輸入對應的字母進行選擇。",
     "endpoints": {
       "A": {
         "name": "奄列",

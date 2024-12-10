@@ -4,25 +4,32 @@
     "items": {
       "A": {
         "name": "奄列",
-        "price": "£4"
+        "price": "£4",
+        "next": "addons"
       },
       "B": {
         "name": "芝士奄列",
-        "price": "£5"
+        "price": "£5",
+        "next": "addons"
       },
       "C": {
         "name": "蘑菇奄列",
-        "price": "£5"
+        "price": "£5",
+        "next": "addons"
       },
       "D": {
         "name": "火腿奄列",
-        "price": "£6"
+        "price": "£6",
+        "next": "addons"
       },
       "E": {
         "name": "煙肉奄列",
-        "price": "£6"
+        "price": "£6",
+        "next": "addons"
       },
-      "0": "重新選擇"
+      "0": {
+        "action": "reset"
+      }
     },
     "addons": {
       "markdown": "### 🌟 加配選項：\n\nA. 薯條及茄汁豆（£2）\nB. 跳過加配\n0. 重新選擇（清空選擇）\n\n請輸入對應的字母進行選擇。",
@@ -31,9 +38,15 @@
           "name": "薯條及茄汁豆",
           "price": "£2"
         },
-        "B": "跳過加配",
-        "0": "重新選擇"
+        "B": {
+          "name": "跳過加配",
+          "price": "£0"
+        },
+        "0": {
+          "action": "reset"
+        }
       }
-    }
+    },
+    "instructions": "Based on the user's selection from the main options, load the 'addons' section for additional choices. If the user selects '0', reset the selection to allow re-selection of the main options."
   }
 }
