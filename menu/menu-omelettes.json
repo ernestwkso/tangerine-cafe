@@ -51,6 +51,9 @@
         "action": "reset"
       }
     },
-    "instructions": "Based on the user's selection from the main options, dynamically load the 'addons' section for additional choices using the 'load' field. If the user selects '0', reset the selection to allow re-selection of the main options."
+    "instructions": {
+      "load_addons": "After the user selects an omelette option (e.g., A for 奄列), load the 'addons' section by fetching the JSON file specified in the 'load' field ('menu-omelettes-addons.json').",
+      "reset_option": "If the user selects '0', reset the selection and allow them to choose an omelette again."
+    }
   }
 }
