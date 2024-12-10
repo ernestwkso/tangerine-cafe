@@ -61,6 +61,7 @@
         },
         "0": "重新選擇"
       }
-    }
+    },
+    "instructions": "Based on the user's selection from the main options, load the 'addons' section for additional choices. If the user selects '0', reset the selection to allow re-selection of the main options."
   }
 }
