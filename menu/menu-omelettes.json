@@ -6,46 +6,41 @@
       "A": {
         "name": "奄列",
         "price": "£4",
-        "next": "addons",
-        "load": {
+        "next": {
           "type": "addons",
-          "source": "{base_url}menu-omelettes-addons.json"
+          "load_from": "menu-omelettes-addons.json"
         }
       },
       "B": {
         "name": "芝士奄列",
         "price": "£5",
-        "next": "addons",
-        "load": {
+        "next": {
           "type": "addons",
-          "source": "{base_url}menu-omelettes-addons.json"
+          "load_from": "menu-omelettes-addons.json"
         }
       },
       "C": {
         "name": "蘑菇奄列",
         "price": "£5",
-        "next": "addons",
-        "load": {
+        "next": {
           "type": "addons",
-          "source": "{base_url}menu-omelettes-addons.json"
+          "load_from": "menu-omelettes-addons.json"
         }
       },
       "D": {
         "name": "火腿奄列",
         "price": "£6",
-        "next": "addons",
-        "load": {
+        "next": {
           "type": "addons",
-          "source": "{base_url}menu-omelettes-addons.json"
+          "load_from": "menu-omelettes-addons.json"
         }
       },
       "E": {
         "name": "煙肉奄列",
         "price": "£6",
-        "next": "addons",
-        "load": {
+        "next": {
           "type": "addons",
-          "source": "{base_url}menu-omelettes-addons.json"
+          "load_from": "menu-omelettes-addons.json"
         }
       },
       "0": {
@@ -53,8 +48,8 @@
       }
     },
     "instructions": {
-      "load_addons": "After the user selects an omelette option (e.g., A for 奄列), dynamically replace '{base_url}' with the value of the 'base_url' key to load the addons JSON file.",
-      "reset_option": "If the user selects '0', reset the selection and allow them to choose an omelette again."
+      "load_addons": "When a customer selects an omelette option, dynamically load 'menu-omelettes-addons.json' from '{base_url}' and display the addons section.",
+      "reset_option": "If the customer selects '0', reset their selection and prompt them to choose an omelette again."
     }
   }
 }
