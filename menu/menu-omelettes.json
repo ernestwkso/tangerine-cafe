@@ -6,41 +6,41 @@
       "A": {
         "name": "奄列",
         "price": "£4",
-        "next": {
-          "type": "addons",
-          "load_from": "menu-omelettes-addons.json"
+        "next": "addons",
+        "load_from": {
+          "url": "{base_url}menu-omelettes-addons.json"
         }
       },
       "B": {
         "name": "芝士奄列",
         "price": "£5",
-        "next": {
-          "type": "addons",
-          "load_from": "menu-omelettes-addons.json"
+        "next": "addons",
+        "load_from": {
+          "url": "{base_url}menu-omelettes-addons.json"
         }
       },
       "C": {
         "name": "蘑菇奄列",
         "price": "£5",
-        "next": {
-          "type": "addons",
-          "load_from": "menu-omelettes-addons.json"
+        "next": "addons",
+        "load_from": {
+          "url": "{base_url}menu-omelettes-addons.json"
         }
       },
       "D": {
         "name": "火腿奄列",
         "price": "£6",
-        "next": {
-          "type": "addons",
-          "load_from": "menu-omelettes-addons.json"
+        "next": "addons",
+        "load_from": {
+          "url": "{base_url}menu-omelettes-addons.json"
         }
       },
       "E": {
         "name": "煙肉奄列",
         "price": "£6",
-        "next": {
-          "type": "addons",
-          "load_from": "menu-omelettes-addons.json"
+        "next": "addons",
+        "load_from": {
+          "url": "{base_url}menu-omelettes-addons.json"
         }
       },
       "0": {
@@ -48,7 +48,7 @@
       }
     },
     "instructions": {
-      "load_addons": "When a customer selects an omelette option, dynamically load 'menu-omelettes-addons.json' from '{base_url}' and display the addons section.",
+      "load_addons": "When a customer selects an omelette, construct the URL using 'base_url' and the 'source' field to load the addons file dynamically. Replace '{base_url}' with its actual value.",
       "reset_option": "If the customer selects '0', reset their selection and prompt them to choose an omelette again."
     }
   }
