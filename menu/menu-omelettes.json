@@ -5,27 +5,47 @@
       "A": {
         "name": "奄列",
         "price": "£4",
-        "next": "addons"
+        "next": "addons",
+        "load": {
+          "type": "addons",
+          "source": "奄列.addons"
+        }
       },
       "B": {
         "name": "芝士奄列",
         "price": "£5",
-        "next": "addons"
+        "next": "addons",
+        "load": {
+          "type": "addons",
+          "source": "奄列.addons"
+        }
       },
       "C": {
         "name": "蘑菇奄列",
         "price": "£5",
-        "next": "addons"
+        "next": "addons",
+        "load": {
+          "type": "addons",
+          "source": "奄列.addons"
+        }
       },
       "D": {
         "name": "火腿奄列",
         "price": "£6",
-        "next": "addons"
+        "next": "addons",
+        "load": {
+          "type": "addons",
+          "source": "奄列.addons"
+        }
       },
       "E": {
         "name": "煙肉奄列",
         "price": "£6",
-        "next": "addons"
+        "next": "addons",
+        "load": {
+          "type": "addons",
+          "source": "奄列.addons"
+        }
       },
       "0": {
         "action": "reset"
@@ -47,6 +67,6 @@
         }
       }
     },
-    "instructions": "Based on the user's selection from the main options, load the 'addons' section for additional choices. If the user selects '0', reset the selection to allow re-selection of the main options."
+    "instructions": "Based on the user's selection from the main options, dynamically load the 'addons' section for additional choices using the 'load' field. If the user selects '0', reset the selection to allow re-selection of the main options."
   }
 }
