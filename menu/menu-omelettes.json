@@ -8,7 +8,7 @@
         "next": "addons",
         "load": {
           "type": "addons",
-          "source": "奄列.addons"
+          "source": "menu-omelettes-addons.json"
         }
       },
       "B": {
@@ -17,7 +17,7 @@
         "next": "addons",
         "load": {
           "type": "addons",
-          "source": "奄列.addons"
+          "source": "menu-omelettes-addons.json"
         }
       },
       "C": {
@@ -26,7 +26,7 @@
         "next": "addons",
         "load": {
           "type": "addons",
-          "source": "奄列.addons"
+          "source": "menu-omelettes-addons.json"
         }
       },
       "D": {
@@ -35,7 +35,7 @@
         "next": "addons",
         "load": {
           "type": "addons",
-          "source": "奄列.addons"
+          "source": "menu-omelettes-addons.json"
         }
       },
       "E": {
@@ -44,27 +44,11 @@
         "next": "addons",
         "load": {
           "type": "addons",
-          "source": "奄列.addons"
+          "source": "menu-omelettes-addons.json"
         }
       },
       "0": {
         "action": "reset"
-      }
-    },
-    "addons": {
-      "markdown": "### 🌟 加配選項：\n\nA. 薯條及茄汁豆（£2）\nB. 跳過加配\n0. 重新選擇（清空選擇）\n\n請輸入對應的字母進行選擇。",
-      "items": {
-        "A": {
-          "name": "薯條及茄汁豆",
-          "price": "£2"
-        },
-        "B": {
-          "name": "跳過加配",
-          "price": "£0"
-        },
-        "0": {
-          "action": "reset"
-        }
       }
     },
     "instructions": "Based on the user's selection from the main options, dynamically load the 'addons' section for additional choices using the 'load' field. If the user selects '0', reset the selection to allow re-selection of the main options."
