@@ -1,0 +1,79 @@
+{
+  "港式全日早餐": {
+    "markdown": "### 🌟 港式全日早餐選項：\n\n請按步驟選擇搭配：\n1. 主餐\n2. 粉面\n3. 配菜\n4. 麵包\n5. 額外加配\n\n請按照每一步驟完成選擇。",
+    "steps": {
+      "main": {
+        "markdown": "### 🌟 主餐選擇：\n\nA. 火腿\nB. 雪菜肉絲\nC. 榨菜肉絲\nD. 特濃蕃茄餐肉粒\nE. 特濃蕃茄滑牛\nF. 沙嗲雞丁\nG. 五香肉丁\nH. 雙丸（3牛丸，3羊丸）\nI. 沙嗲牛肉\n\n請輸入對應的字母進行選擇。",
+        "items": {
+          "A": { "name": "火腿", "price": "£7.5" },
+          "B": { "name": "雪菜肉絲", "price": "£8" },
+          "C": { "name": "榨菜肉絲", "price": "£8" },
+          "D": { "name": "特濃蕃茄餐肉粒", "price": "£8.5" },
+          "E": { "name": "特濃蕃茄滑牛", "price": "£9.5" },
+          "F": { "name": "沙嗲雞丁", "price": "£8.5" },
+          "G": { "name": "五香肉丁", "price": "£8.5" },
+          "H": { "name": "雙丸（3牛丸，3羊丸）", "price": "£8.5" },
+          "I": { "name": "沙嗲牛肉", "price": "£9" }
+        }
+      },
+      "noodles": {
+        "markdown": "### 🌟 粉面選擇：\n\nA. 出前一丁（加 £0.5）\nB. 公仔面（加 £0）\nC. 米粉（加 £0）\nD. 通粉（加 £0）\n0. 重新選擇（清空選擇）\n\n請輸入對應的字母進行選擇。",
+        "items": {
+          "A": { "name": "出前一丁", "price": "£0.5" },
+          "B": { "name": "公仔面", "price": "£0" },
+          "C": { "name": "米粉", "price": "£0" },
+          "D": { "name": "通粉", "price": "£0" },
+          "0": { "action": "reset" }
+        }
+      },
+      "sides": {
+        "markdown": "### 🌟 配菜選擇：\n\nA. 雞蛋\nB. 香腸\nC. 午餐肉\nD. 火腿\nE. 煙肉\nF. 蘑菇\n\n請選擇兩個配菜，並輸入對應的字母（例如 AB）。",
+        "items": {
+          "A": "雞蛋",
+          "B": "香腸",
+          "C": "午餐肉",
+          "D": "火腿",
+          "E": "煙肉",
+          "F": "蘑菇"
+        }
+      },
+      "bread": {
+        "markdown": "### 🌟 麵包選擇：\n\nA. 牛油方包（1塊）\nB. 多士（1塊）\nC. 不要包\n\n請輸入對應的字母進行選擇。",
+        "items": {
+          "A": { "name": "牛油方包（1塊）", "price": "£0" },
+          "B": { "name": "多士（1塊）", "price": "£0.2" },
+          "C": { "name": "不要包", "price": "£0" }
+        }
+      },
+      "extras": {
+        "markdown": "### 🌟 額外加配選項：\n\nA. 牛肉漢堡扒\nB. 吉列雞\nC. 炸魚柳\nD. 3羊丸\nE. 3牛丸\nF. 薯餅\nG. 3炸魚條\nH. 3麥樂雞\nI. 薯條\n\n請輸入對應的字母進行選擇。",
+        "items": {
+          "A": { "name": "牛肉漢堡扒", "price": "£2" },
+          "B": { "name": "吉列雞", "price": "£2" },
+          "C": { "name": "炸魚柳", "price": "£2" },
+          "D": { "name": "3羊丸", "price": "£1.5" },
+          "E": { "name": "3牛丸", "price": "£1.5" },
+          "F": { "name": "薯餅", "price": "£1" },
+          "G": { "name": "3炸魚條", "price": "£1" },
+          "H": { "name": "3麥樂雞", "price": "£1" },
+          "I": { "name": "薯條", "price": "£1" }
+        }
+      }
+    },
+    "drink_prompt": {
+      "markdown": "### 🌟 您想加一杯飲品嗎？\n\nA. 是，查看飲品菜單\nB. 否\n\n請輸入對應的字母進行選擇。",
+      "items": {
+        "A": { "action": "load", "file": "menu-drinks.json" },
+        "B": { "action": "continue" }
+      }
+    },
+    "instructions": {
+      "main_selection": "Guide the customer to select one main dish from the main options.",
+      "noodles_selection": "Prompt the customer to select a type of noodles after choosing the main dish.",
+      "sides_selection": "Allow the customer to select two side items.",
+      "bread_selection": "Prompt the customer to select a type of bread.",
+      "extras_selection": "Allow the customer to add extra addons to their meal.",
+      "drink_prompt": "After completing the meal selection, prompt the customer to add a drink before checkout."
+    }
+  }
+}
