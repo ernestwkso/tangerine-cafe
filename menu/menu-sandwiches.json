@@ -76,20 +76,49 @@
                 "name": "是",
                 "price": "£0.30"
               },
-              "B": "否"
+              "B": {
+                "name": "否",
+                "price": "£0"
+              }
             }
           },
           "confirm": {
             "markdown": "### 🌟 請確認您的三文治選擇：\n\n您選擇了：\n\n拼法：**%BASE_CHOICE%**\n配料：**%INGREDIENTS_CHOICES%**\n烘底：**%GRILLED_CHOICE%**\n\n總價：**%TOTAL_PRICE%**\n\nA. 確認\nB. 重新選擇\n\n請輸入對應的字母進行選擇。",
-            "options": {
-              "A": "確認",
-              "B": "重新選擇"
+            "items": {
+              "A": {
+                "name": "確認",
+                "action": "confirm"
+              },
+              "B": {
+                "name": "重新選擇",
+                "action": "reset"
+              }
             }
           }
         }
       },
-      "0": "重新選擇"
+      "0": {
+        "action": "reset"
+      }
     },
-    "instructions": "Based on the user's selection from the main options, load the 'addons' section for additional choices. If the user selects '0', reset the selection to allow re-selection of the main options."
+    "instructions": {
+      "main_selection": "Allow the customer to select one main option from the '港式三文治、多士、法包' choices.",
+      "addon_selection": "For options with addons (e.g., 港式西多士 or 三文治), guide the customer through the corresponding subcategory selections.",
+      "reset_option": "If the customer selects '0', reset their selection and re-prompt them to choose a main option."
+    },
+    "drink_prompt": {
+      "drink_prompt": {
+        "markdown": "### 🌟 您想加一杯飲品嗎？\n\nA. 是，查看飲品菜單\nB. 否\n\n請輸入對應的字母進行選擇。",
+        "items": {
+          "A": {
+            "action": "load",
+            "file": "menu-drinks.json"
+          },
+          "B": {
+            "action": "continue"
+          }
+        }
+      }
+    }
   }
 }

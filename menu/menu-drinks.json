@@ -2,10 +2,21 @@
   "飲品": {
     "markdown": "### 🌟 飲品選擇：\n\nA. 凍飲\nB. 熱飲\nC. 特飲\n0. 重新選擇（清空選擇）\n\n請輸入對應的字母進行選擇。",
     "items": {
-      "A": "凍飲",
-      "B": "熱飲",
-      "C": "特飲",
-      "0": "重新選擇"
+      "A": {
+        "name": "凍飲",
+        "subcategory": "凍飲"
+      },
+      "B": {
+        "name": "熱飲",
+        "subcategory": "熱飲"
+      },
+      "C": {
+        "name": "特飲",
+        "subcategory": "特飲"
+      },
+      "0": {
+        "action": "reset"
+      }
     },
     "subcategories": {
       "凍飲": {
@@ -19,7 +30,9 @@
             "name": "凍檸茶",
             "price": "£4"
           },
-          "0": "重新選擇"
+          "0": {
+            "action": "reset"
+          }
         }
       },
       "熱飲": {
@@ -33,7 +46,9 @@
             "name": "熱檸茶",
             "price": "£3"
           },
-          "0": "重新選擇"
+          "0": {
+            "action": "reset"
+          }
         }
       },
       "特飲": {
@@ -47,10 +62,16 @@
             "name": "特調咖啡",
             "price": "£4"
           },
-          "0": "重新選擇"
+          "0": {
+            "action": "reset"
+          }
         }
       }
     },
-    "instructions": "Based on the user's selection from the main options, load the 'addons' section for additional choices. If the user selects '0', reset the selection to allow re-selection of the main options."
+    "instructions": {
+      "main_selection": "Allow the customer to select one main drink category: 凍飲, 熱飲, or 特飲.",
+      "subcategory_selection": "Once a category is selected, prompt the user to choose an item from the corresponding subcategory options.",
+      "reset_option": "If the customer selects '0', reset their selection and re-prompt them to choose a main drink category."
+    }
   }
 }

@@ -38,7 +38,9 @@
         "name": "榨菜肉絲",
         "price": "£7.5"
       },
-      "0": "重新選擇"
+      "0": {
+        "action": "reset"
+      }
     },
     "addons": {
       "markdown": "### 🌟 粉面選擇：\n\nA. 出前一丁（加 £0）\nB. 公仔面（加 £0）\nC. 米粉（加 £0）\nD. 通粉（加 £0）\n0. 重新選擇（清空選擇）\n\n請輸入對應的字母進行選擇。",
@@ -59,9 +61,29 @@
           "name": "通粉",
           "price": "£0"
         },
-        "0": "重新選擇"
+        "0": {
+          "action": "reset"
+        }
       }
     },
-    "instructions": "Based on the user's selection from the main options, load the 'addons' section for additional choices. If the user selects '0', reset the selection to allow re-selection of the main options."
+    "instructions": {
+      "main_selection": "Allow the customer to select one main option from the '散叫湯面' choices.",
+      "addon_selection": "After selecting a main option, prompt the customer to select an addon from the noodle types. Use the 'addons' section for the options.",
+      "reset_option": "If the customer selects '0', reset their selection and re-prompt them to choose a main option."
+    },
+    "drink_prompt": {
+      "drink_prompt": {
+        "markdown": "### 🌟 您想加一杯飲品嗎？\n\nA. 是，查看飲品菜單\nB. 否\n\n請輸入對應的字母進行選擇。",
+        "items": {
+          "A": {
+            "action": "load",
+            "file": "menu-drinks.json"
+          },
+          "B": {
+            "action": "continue"
+          }
+        }
+      }
+    }
   }
 }

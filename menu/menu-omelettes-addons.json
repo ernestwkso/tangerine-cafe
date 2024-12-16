@@ -15,7 +15,7 @@
       }
     },
     "instructions": {
-      "addon_selection": "Allow the customer to select an addon or skip. Reset the addon selection if '0' is selected."
+      "addon_selection": "Allow the customer to select an addon or skip the addon. If '0' is selected, reset the addon selection and re-prompt the customer."
     }
   }
 }

@@ -1,29 +1,33 @@
 {
   "menu_loader": {
-    "base_url": "https://github.com/ernestwkso/tangerine-cafe/blob/main/menu/",
     "markdown": "### 🌟 請選擇餐點分類：\n\nA. 奄列\nB. 散叫湯面\nC. 港式頹飯\nD. 港式三文治、多士、法包\nE. 飲品\n\n請輸入對應的字母進行選擇。",
     "endpoints": {
       "A": {
         "name": "奄列",
-        "file": "menu-omelettes.json"
+        "file": "menu-omelettes.json",
+        "description": "各式港式奄列，搭配新鮮配料與特色調味。"
       },
       "B": {
         "name": "散叫湯面",
-        "file": "menu-noodlesoup.json"
+        "file": "menu-noodlesoup.json",
+        "description": "經典港式湯面，結合濃郁湯底與彈牙麵條。"
       },
       "C": {
         "name": "港式頹飯",
-        "file": "menu-hkrice.json"
+        "file": "menu-hkrice.json",
+        "description": "多樣化的港式便當飯，滿足每日的味蕾需求。"
       },
       "D": {
         "name": "港式三文治、多士、法包",
-        "file": "menu-sandwiches.json"
+        "file": "menu-sandwiches.json",
+        "description": "豐富的三文治與多士選擇，搭配傳統港式風味。"
       },
       "E": {
         "name": "飲品",
-        "file": "menu-drinks.json"
+        "file": "menu-drinks.json",
+        "description": "多元飲品選項，包括港式奶茶、凍檸茶等經典飲品。"
       }
     },
-    "instructions": "To load a menu category, use the 'base_url' with the corresponding endpoint from 'endpoints'. For example, to load the '奄列' menu, fetch the URL: {base_url} + {endpoints.A.file}."
+    "instructions": "To load a menu category, use the 'file' field from 'endpoints' to locate the corresponding menu file within the GPTs environment."
   }
 }

@@ -1,5 +1,4 @@
 {
-  "base_url": "https://github.com/ernestwkso/tangerine-cafe/blob/main/menu/",
   "奄列": {
     "markdown": "### 🌟 奄列選項：\n\nA. 奄列（£4）\nB. 芝士奄列（£5）\nC. 蘑菇奄列（£5）\nD. 火腿奄列（£6）\nE. 煙肉奄列（£6）\n0. 重新選擇（清空選擇）\n\n請輸入對應的字母進行選擇。",
     "items": {
@@ -8,7 +7,7 @@
         "price": "£4",
         "next": "addons",
         "load_from": {
-          "url": "{base_url}menu-omelettes-addons.json"
+          "file": "menu-omelettes-addons.json"
         }
       },
       "B": {
@@ -16,7 +15,7 @@
         "price": "£5",
         "next": "addons",
         "load_from": {
-          "url": "{base_url}menu-omelettes-addons.json"
+          "file": "menu-omelettes-addons.json"
         }
       },
       "C": {
@@ -24,7 +23,7 @@
         "price": "£5",
         "next": "addons",
         "load_from": {
-          "url": "{base_url}menu-omelettes-addons.json"
+          "file": "menu-omelettes-addons.json"
         }
       },
       "D": {
@@ -32,7 +31,7 @@
         "price": "£6",
         "next": "addons",
         "load_from": {
-          "url": "{base_url}menu-omelettes-addons.json"
+          "file": "menu-omelettes-addons.json"
         }
       },
       "E": {
@@ -40,7 +39,7 @@
         "price": "£6",
         "next": "addons",
         "load_from": {
-          "url": "{base_url}menu-omelettes-addons.json"
+          "file": "menu-omelettes-addons.json"
         }
       },
       "0": {
@@ -48,8 +47,22 @@
       }
     },
     "instructions": {
-      "load_addons": "When a customer selects an omelette, construct the URL using 'base_url' and the 'source' field to load the addons file dynamically. Replace '{base_url}' with its actual value.",
+      "load_addons": "When a customer selects an omelette, use the 'file' field from the selected item to load the addons file dynamically.",
       "reset_option": "If the customer selects '0', reset their selection and prompt them to choose an omelette again."
+    },
+    "drink_prompt": {
+      "drink_prompt": {
+        "markdown": "### 🌟 您想加一杯飲品嗎？\n\nA. 是，查看飲品菜單\nB. 否\n\n請輸入對應的字母進行選擇。",
+        "items": {
+          "A": {
+            "action": "load",
+            "file": "menu-drinks.json"
+          },
+          "B": {
+            "action": "continue"
+          }
+        }
+      }
     }
   }
 }

@@ -46,15 +46,45 @@
           },
           "confirm": {
             "markdown": "### 🌟 請確認您的自選頹飯：\n\n您選擇了：\n\n配料：**%PROTEIN_CHOICES%**\n飯汁：**%SAUCE_CHOICE%**\n\nA. 確認\nB. 重新選擇\n\n請輸入對應的字母進行選擇。",
-            "options": {
-              "A": "確認",
-              "B": "重新選擇"
+            "items": {
+              "A": {
+                "name": "確認",
+                "action": "confirm"
+              },
+              "B": {
+                "name": "重新選擇",
+                "action": "reset"
+              }
             }
           }
         }
       },
-      "0": "重新選擇"
+      "0": {
+        "action": "reset"
+      }
     },
-    "instructions": "Based on the user's selection from the main options, load the 'addons' section for additional choices. If the user selects '0', reset the selection to allow re-selection of the main options."
+    "instructions": {
+      "main_selection": "Allow the customer to select one main option. If 'F' is selected, guide them through the subcategories for self-customization.",
+      "subcategories": {
+        "protein_selection": "Allow the customer to select two proteins for 自選頹飯.",
+        "sauce_selection": "Allow the customer to select one sauce for 自選頹飯.",
+        "confirmation": "Display the customer's protein and sauce choices for confirmation or reset."
+      },
+      "reset_option": "If the customer selects '0', reset the selection and re-prompt them to choose a main option."
+    },
+    "drink_prompt": {
+      "drink_prompt": {
+        "markdown": "### 🌟 您想加一杯飲品嗎？\n\nA. 是，查看飲品菜單\nB. 否\n\n請輸入對應的字母進行選擇。",
+        "items": {
+          "A": {
+            "action": "load",
+            "file": "menu-drinks.json"
+          },
+          "B": {
+            "action": "continue"
+          }
+        }
+      }
+    }
   }
 }
