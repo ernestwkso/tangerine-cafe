@@ -2,30 +2,12 @@
   "menu_loader": {
     "markdown": "### 🌟 請選擇餐點分類：\n\nA. 奄列\nB. 散叫湯面\nC. 港式頹飯\nD. 港式三文治、多士、法包\nE. 港式全日早餐\nF. 飲品\n\n請輸入對應的字母進行選擇。",
     "endpoints": {
-      "A": {
-        "name": "奄列",
-        "file": "menu-omelettes.json"
-      },
-      "B": {
-        "name": "散叫湯面",
-        "file": "menu-noodlesoup.json"
-      },
-      "C": {
-        "name": "港式頹飯",
-        "file": "menu-hkrice.json"
-      },
-      "D": {
-        "name": "港式三文治、多士、法包",
-        "file": "menu-sandwiches.json"
-      },
-      "E": {
-        "name": "港式全日早餐",
-        "file": "menu-hkalldaybreakfast.json"
-      },
-      "F": {
-        "name": "飲品",
-        "file": "menu-drinks.json"
-      }
+      "A": { "name": "奄列", "file": "menu-omelettes.json" },
+      "B": { "name": "散叫湯面", "file": "menu-noodlesoup.json" },
+      "C": { "name": "港式頹飯", "file": "menu-hkrice.json" },
+      "D": { "name": "港式三文治、多士、法包", "file": "menu-sandwiches.json" },
+      "E": { "name": "港式全日早餐", "file": "menu-hkalldaybreakfast.json" },
+      "F": { "name": "飲品", "file": "menu-drinks.json" }
     },
     "instructions": "To load a menu category, use the 'file' field from 'endpoints' to locate the corresponding menu file within the GPTs environment."
   }

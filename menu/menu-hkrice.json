@@ -2,26 +2,11 @@
   "港式頹飯": {
     "markdown": "### 🌟 港式頹飯選項：\n\nA. 公司飯（雞蛋，火腿，香腸，餐肉）（£9）\nB. 五香肉丁，煎雙蛋飯（£9.5）\nC. 牛肉漢堡扒，煎雙蛋飯（£9）\nD. 吉列雞扒，煎雙蛋飯（£9）\nE. 魚柳，煎雙蛋飯（£8.5）\nF. 自選頹飯（£7）\n0. 重新選擇（清空選擇）\n\n請輸入對應的字母進行選擇。",
     "items": {
-      "A": {
-        "name": "公司飯（雞蛋，火腿，香腸，餐肉）",
-        "price": "£9"
-      },
-      "B": {
-        "name": "五香肉丁，煎雙蛋飯",
-        "price": "£9.5"
-      },
-      "C": {
-        "name": "牛肉漢堡扒，煎雙蛋飯",
-        "price": "£9"
-      },
-      "D": {
-        "name": "吉列雞扒，煎雙蛋飯",
-        "price": "£9"
-      },
-      "E": {
-        "name": "魚柳，煎雙蛋飯",
-        "price": "£8.5"
-      },
+      "A": { "name": "公司飯（雞蛋，火腿，香腸，餐肉）", "price": "£9" },
+      "B": { "name": "五香肉丁，煎雙蛋飯", "price": "£9.5" },
+      "C": { "name": "牛肉漢堡扒，煎雙蛋飯", "price": "£9" },
+      "D": { "name": "吉列雞扒，煎雙蛋飯", "price": "£9" },
+      "E": { "name": "魚柳，煎雙蛋飯", "price": "£8.5" },
       "F": {
         "name": "自選頹飯",
         "price": "£7",
@@ -47,21 +32,13 @@
           "confirm": {
             "markdown": "### 🌟 請確認您的自選頹飯：\n\n您選擇了：\n\n配料：**%PROTEIN_CHOICES%**\n飯汁：**%SAUCE_CHOICE%**\n\nA. 確認\nB. 重新選擇\n\n請輸入對應的字母進行選擇。",
             "items": {
-              "A": {
-                "name": "確認",
-                "action": "confirm"
-              },
-              "B": {
-                "name": "重新選擇",
-                "action": "reset"
-              }
+              "A": { "name": "確認", "action": "confirm" },
+              "B": { "name": "重新選擇", "action": "reset" }
             }
           }
         }
       },
-      "0": {
-        "action": "reset"
-      }
+      "0": { "action": "reset" }
     },
     "instructions": {
       "main_selection": "Allow the customer to select one main option. If 'F' is selected, guide them through the subcategories for self-customization.",
@@ -73,17 +50,10 @@
       "reset_option": "If the customer selects '0', reset the selection and re-prompt them to choose a main option."
     },
     "drink_prompt": {
-      "drink_prompt": {
-        "markdown": "### 🌟 您想加一杯飲品嗎？\n\nA. 是，查看飲品菜單\nB. 否\n\n請輸入對應的字母進行選擇。",
-        "items": {
-          "A": {
-            "action": "load",
-            "file": "menu-drinks.json"
-          },
-          "B": {
-            "action": "continue"
-          }
-        }
+      "markdown": "### 🌟 您想加一杯飲品嗎？\n\nA. 是，查看飲品菜單\nB. 否\n\n請輸入對應的字母進行選擇。",
+      "items": {
+        "A": { "action": "load", "file": "menu-drinks.json" },
+        "B": { "action": "continue" }
       }
     }
   }

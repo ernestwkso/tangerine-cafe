@@ -2,17 +2,9 @@
   "奄列-addons": {
     "markdown": "### 🌟 加配選項：\n\nA. 薯條及茄汁豆（£2）\nB. 跳過加配\n0. 重新選擇（清空選擇）\n\n請輸入對應的字母進行選擇。",
     "items": {
-      "A": {
-        "name": "薯條及茄汁豆",
-        "price": "£2"
-      },
-      "B": {
-        "name": "跳過加配",
-        "price": "£0"
-      },
-      "0": {
-        "action": "reset"
-      }
+      "A": { "name": "薯條及茄汁豆", "price": "£2" },
+      "B": { "name": "跳過加配", "price": "£0" },
+      "0": { "action": "reset" }
     },
     "instructions": {
       "addon_selection": "Allow the customer to select an addon or skip the addon. If '0' is selected, reset the addon selection and re-prompt the customer."

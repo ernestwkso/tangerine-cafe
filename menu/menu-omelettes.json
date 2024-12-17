@@ -6,62 +6,43 @@
         "name": "奄列",
         "price": "£4",
         "next": "addons",
-        "load_from": {
-          "file": "menu-omelettes-addons.json"
-        }
+        "load_from": { "file": "menu-omelettes-addons.json" }
       },
       "B": {
         "name": "芝士奄列",
         "price": "£5",
         "next": "addons",
-        "load_from": {
-          "file": "menu-omelettes-addons.json"
-        }
+        "load_from": { "file": "menu-omelettes-addons.json" }
       },
       "C": {
         "name": "蘑菇奄列",
         "price": "£5",
         "next": "addons",
-        "load_from": {
-          "file": "menu-omelettes-addons.json"
-        }
+        "load_from": { "file": "menu-omelettes-addons.json" }
       },
       "D": {
         "name": "火腿奄列",
         "price": "£6",
         "next": "addons",
-        "load_from": {
-          "file": "menu-omelettes-addons.json"
-        }
+        "load_from": { "file": "menu-omelettes-addons.json" }
       },
       "E": {
         "name": "煙肉奄列",
         "price": "£6",
         "next": "addons",
-        "load_from": {
-          "file": "menu-omelettes-addons.json"
-        }
+        "load_from": { "file": "menu-omelettes-addons.json" }
       },
-      "0": {
-        "action": "reset"
-      }
+      "0": { "action": "reset" }
     },
     "instructions": {
       "load_addons": "When a customer selects an omelette, use the 'file' field from the selected item to load the addons file dynamically.",
       "reset_option": "If the customer selects '0', reset their selection and prompt them to choose an omelette again."
     },
     "drink_prompt": {
-      "drink_prompt": {
-        "markdown": "### 🌟 您想加一杯飲品嗎？\n\nA. 是，查看飲品菜單\nB. 否\n\n請輸入對應的字母進行選擇。",
-        "items": {
-          "A": {
-            "action": "load",
-            "file": "menu-drinks.json"
-          },
-          "B": {
-            "action": "continue"
-          }
-        }
+      "markdown": "### 🌟 您想加一杯飲品嗎？\n\nA. 是，查看飲品菜單\nB. 否\n\n請輸入對應的字母進行選擇。",
+      "items": {
+        "A": { "action": "load", "file": "menu-drinks.json" },
+        "B": { "action": "continue" }
       }
     }
   }
