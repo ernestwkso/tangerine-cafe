@@ -1,9 +1,10 @@
 {
   "港式全日早餐": {
-    "markdown": "### 🌟 港式全日早餐選項：\n\n請按步驟選擇搭配：\n1. 主餐\n2. 粉面\n3. 配菜\n4. 麵包\n5. 額外加配\n\n請按照每一步驟完成選擇。",
+    "markdown": "### 🌟 港式全日早餐選項：\n\n請按步驟選擇搭配：\n1. 主餐\n2. 粉面\n3. 配菜\n4. 麵包\n5. 額外加配\n\n請按照每一步驟完成選擇。您可以在任何步驟返回到上一步或重新開始。",
     "steps": {
       "main": {
-        "markdown": "### 🌟 主餐選擇：\n\nA. 火腿\nB. 雪菜肉絲\nC. 榨菜肉絲\nD. 特濃蕃茄餐肉粒\nE. 特濃蕃茄滑牛\nF. 沙嗲雞丁\nG. 五香肉丁\nH. 雙丸（3牛丸，3羊丸）\nI. 沙嗲牛肉\n\n請輸入對應的字母進行選擇。",
+        "markdown": "### 🌟 主餐選擇：\n\nA. 火腿\nB. 雪菜肉絲\nC. 榨菜肉絲\nD. 特濃蕃茄餐肉粒\nE. 特濃蕃茄滑牛\nF. 沙嗲雞丁\nG. 五香肉丁\nH. 雙丸（3牛丸，3羊丸）\nI. 沙嗲牛肉\nR. 返回上一層\nS. 重新開始\n\n目前總價：£{total}\n\n請輸入對應的字母進行選擇。",
+        "error_message": "❌ 無效選擇！請輸入有效的字母（A-I，R 或 S）。",
         "items": {
           "A": { "name": "火腿", "price": "£7.5" },
           "B": { "name": "雪菜肉絲", "price": "£8" },
@@ -13,40 +14,39 @@
           "F": { "name": "沙嗲雞丁", "price": "£8.5" },
           "G": { "name": "五香肉丁", "price": "£8.5" },
           "H": { "name": "雙丸（3牛丸，3羊丸）", "price": "£8.5" },
-          "I": { "name": "沙嗲牛肉", "price": "£9" }
-        }
-      },
-      "noodles": {
-        "markdown": "### 🌟 粉面選擇：\n\nA. 出前一丁（加 £0.5）\nB. 公仔面（加 £0）\nC. 米粉（加 £0）\nD. 通粉（加 £0）\n0. 重新選擇（清空選擇）\n\n請輸入對應的字母進行選擇。",
-        "items": {
-          "A": { "name": "出前一丁", "price": "£0.5" },
-          "B": { "name": "公仔面", "price": "£0" },
-          "C": { "name": "米粉", "price": "£0" },
-          "D": { "name": "通粉", "price": "£0" },
-          "0": { "action": "reset" }
+          "I": { "name": "沙嗲牛肉", "price": "£9" },
+          "R": { "action": "go_back" },
+          "S": { "action": "reset" }
         }
       },
       "sides": {
-        "markdown": "### 🌟 配菜選擇：\n\nA. 雞蛋\nB. 香腸\nC. 午餐肉\nD. 火腿\nE. 煙肉\nF. 蘑菇\n\n請選擇兩個配菜，並輸入對應的字母（例如 AB）。",
+        "markdown": "### 🌟 配菜選擇：\n\nA. 雞蛋\nB. 香腸\nC. 午餐肉\nD. 火腿\nE. 煙肉\nF. 蘑菇\nR. 返回上一層\nS. 重新開始\n\n目前總價：£{total}\n\n請選擇兩個配菜，並輸入對應的字母（例如 AB）。",
+        "error_message": "❌ 無效選擇！請選擇兩個有效的字母（例如 AB）。",
         "items": {
           "A": "雞蛋",
           "B": "香腸",
           "C": "午餐肉",
           "D": "火腿",
           "E": "煙肉",
-          "F": "蘑菇"
+          "F": "蘑菇",
+          "R": { "action": "go_back" },
+          "S": { "action": "reset" }
         }
       },
       "bread": {
-        "markdown": "### 🌟 麵包選擇：\n\nA. 牛油方包（1塊）\nB. 多士（1塊）\nC. 不要包\n\n請輸入對應的字母進行選擇。",
+        "markdown": "### 🌟 麵包選擇：\n\nA. 牛油方包（1塊）\nB. 多士（1塊）\nC. 不要包\nR. 返回上一層\nS. 重新開始\n\n目前總價：£{total}\n\n請輸入對應的字母進行選擇。",
+        "error_message": "❌ 無效選擇！請輸入有效的字母（A-C，R 或 S）。",
         "items": {
           "A": { "name": "牛油方包（1塊）", "price": "£0" },
           "B": { "name": "多士（1塊）", "price": "£0.2" },
-          "C": { "name": "不要包", "price": "£0" }
+          "C": { "name": "不要包", "price": "£0" },
+          "R": { "action": "go_back" },
+          "S": { "action": "reset" }
         }
       },
       "extras": {
-        "markdown": "### 🌟 額外加配選項：\n\nA. 牛肉漢堡扒\nB. 吉列雞\nC. 炸魚柳\nD. 3羊丸\nE. 3牛丸\nF. 薯餅\nG. 3炸魚條\nH. 3麥樂雞\nI. 薯條\n\n請輸入對應的字母進行選擇。",
+        "markdown": "### 🌟 額外加配選項：\n\nA. 牛肉漢堡扒\nB. 吉列雞\nC. 炸魚柳\nD. 3羊丸\nE. 3牛丸\nF. 薯餅\nG. 3炸魚條\nH. 3麥樂雞\nI. 薯條\nR. 返回上一層\nS. 重新開始\n\n目前總價：£{total}\n\n請輸入對應的字母進行選擇。",
+        "error_message": "❌ 無效選擇！請輸入有效的字母（A-I，R 或 S）。",
         "items": {
           "A": { "name": "牛肉漢堡扒", "price": "£2" },
           "B": { "name": "吉列雞", "price": "£2" },
@@ -56,9 +56,20 @@
           "F": { "name": "薯餅", "price": "£1" },
           "G": { "name": "3炸魚條", "price": "£1" },
           "H": { "name": "3麥樂雞", "price": "£1" },
-          "I": { "name": "薯條", "price": "£1" }
+          "I": { "name": "薯條", "price": "£1" },
+          "R": { "action": "go_back" },
+          "S": { "action": "reset" }
         }
       }
+    },
+    "instructions": {
+      "validation_single": "Validate that the input matches one valid character. If invalid, show the error message and prompt again.",
+      "validation_double": "Validate that both inputs are valid characters. If either is invalid or missing, show the error message and prompt again.",
+      "main_selection": "Guide the customer to select one main dish from the main options.",
+      "sides_selection": "Prompt the customer to select two side items.",
+      "bread_selection": "Prompt the customer to select a type of bread.",
+      "extras_selection": "Allow the customer to add extra addons to their meal.",
+      "error_handling": "Handle invalid selections by displaying the error message and prompting for input again."
     },
     "drink_prompt": {
       "markdown": "### 🌟 您想加一杯飲品嗎？\n\nA. 是，查看飲品菜單\nB. 否\n\n請輸入對應的字母進行選擇。",
@@ -66,14 +77,6 @@
         "A": { "action": "load", "file": "menu-drinks.json" },
         "B": { "action": "continue" }
       }
-    },
-    "instructions": {
-      "main_selection": "Guide the customer to select one main dish from the main options.",
-      "noodles_selection": "Prompt the customer to select a type of noodles after choosing the main dish.",
-      "sides_selection": "Allow the customer to select two side items.",
-      "bread_selection": "Prompt the customer to select a type of bread.",
-      "extras_selection": "Allow the customer to add extra addons to their meal.",
-      "drink_prompt": "After completing the meal selection, prompt the customer to add a drink before checkout."
     }
   }
 }

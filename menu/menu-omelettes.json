@@ -38,11 +38,19 @@
       "load_addons": "When a customer selects an omelette, use the 'file' field from the selected item to load the addons file dynamically.",
       "reset_option": "If the customer selects '0', reset their selection and prompt them to choose an omelette again."
     },
+    "validation": {
+      "error_message": "⚠️ 無效選擇，請輸入 A, B, C, D, E 或 0。",
+      "valid_inputs": ["A", "B", "C", "D", "E", "0"]
+    },
     "drink_prompt": {
       "markdown": "### 🌟 您想加一杯飲品嗎？\n\nA. 是，查看飲品菜單\nB. 否\n\n請輸入對應的字母進行選擇。",
       "items": {
         "A": { "action": "load", "file": "menu-drinks.json" },
         "B": { "action": "continue" }
+      },
+      "validation": {
+        "error_message": "⚠️ 無效選擇，請輸入 A 或 B。",
+        "valid_inputs": ["A", "B"]
       }
     }
   }
